@@ -8,14 +8,12 @@ namespace AutomapperConsole
     {
         static void Main()
         {
-            WriteLine("Welcome to Automapper Samples");
-
             var source = new Source { Date = new DateTime(2019, 3, 3, 3, 3, 3) };
-
             Mapper.Initialize(cfg => cfg.AddProfile<MappingProfile>());
-
             var dest = Mapper.Map<Destination>(source);
 
+
+            //testing
             WriteLine(dest.Hour == source.Date.Hour);
             WriteLine(dest.Minute == source.Date.Minute);
             WriteLine(dest.Hour == source.Date.Hour);

@@ -6,6 +6,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="01_basic_setup\**" />
+    <Compile Remove="02_static_vs_instance\**" />
+    <Compile Remove="04_custom_type_converters\**" />
+    <EmbeddedResource Remove="01_basic_setup\**" />
+    <EmbeddedResource Remove="02_static_vs_instance\**" />
+    <EmbeddedResource Remove="04_custom_type_converters\**" />
+    <None Remove="01_basic_setup\**" />
+    <None Remove="02_static_vs_instance\**" />
+    <None Remove="04_custom_type_converters\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Program.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="8.0.0" />
   </ItemGroup>
 
