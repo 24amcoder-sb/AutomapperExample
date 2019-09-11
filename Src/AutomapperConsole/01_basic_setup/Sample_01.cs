@@ -3,14 +3,16 @@ using static System.Console;
 
 namespace AutomapperConsole
 {
-    class Program
+    class Sample_01
     {
         static void Main()
         {
             Mapper.Initialize(cfg => cfg.CreateMap<Source, Destination>());
 
             var source = new Source() { Value = 101 };
-            var destination = Mapper.Map<Destination>(source);
+            var destination = Mapper.Map<Destination>(source); //verify the value of 'Value' (set debugger)
+
+            ReadLine();
         }
     }
 
